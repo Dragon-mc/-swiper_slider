@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.swiper-content-box {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-content-box .indicator {
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    text-align: center;
+}
+
+.swiper-content-box .indicator .center{
+    display: inline-block;
+}
+
+.swiper-content-box .indicator .center a{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    transition-duration: 0.5s;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.swiper-content-box .indicator .center a:hover{
+    background: yellow;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.swiper-content-box .arrow {
+    position: absolute;
+    width: 100%;
+}
+
+.swiper-content-box .arrow div {
+    background: orange;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    transition-duration: 0.5s;
+    cursor: pointer;
+    height: 50px;
+    width: 40px;
+    text-align: center;
+
+}
+
+.swiper-content-box .arrow div:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.swiper-content-box .arrow .prev {
+    float: left;
+    margin-left: 10px;
+}
+
+.swiper-content-box .arrow  div  span {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-top: 15px;
+}
+
+.swiper-content-box .arrow .prev span {
+    border-top: 10px dashed transparent;
+    border-right: 10px solid #fff;
+    border-bottom: 10px dashed transparent;
+}
+
+.swiper-content-box .arrow .next span {
+    border-top: 10px dashed transparent;
+    border-left: 10px solid #fff;
+    border-bottom: 10px dashed transparent;
+}
+
+.swiper-content-box .arrow .next {
+    float: right;
+    margin-right: 10px;
+}
+
+.swiper-content-box .swiper-content {
+    position: relative;
+    height: inherit;
+}
+
+.swiper-content-box .swiper-content-scrollX {
+    height: inherit;
+}
+
+.swiper-content-box .swiper-content li {
+    float: left;
+    list-style: none;
+}
+
+.swiper-content-box .swiper-content-fade li {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.swiper-content-box .swiper-content-fragment li {
+    position: absolute;
+    overflow: hidden;
+}
+
+.swiper-content-box .swiper-content li  a {
+    display: inline-block;
+    height: inherit;
+    width: inherit;
+}
+
+.swiper-content-box .swiper-content li  a  img {
+    height: inherit;
+    width: inherit;
+    border: none;
+}
+
+.swiper-content-box .swiper-content-fragment li  a  img {
+    width: auto;
+    position: relative;
+}
